@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f3eae3;
+}
+
+.contenedor {
+    background: white;
+    width: 600px;
+    height: 449px;
+    /* Centrar div */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 20px;
+    display: inline-flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.importante {
+    letter-spacing: 7px;
+    margin-top: 10px;
+
+}
+
+.subcontenedor img {
+    max-width: 100%;
+    width: 300px;
+    
+}
+
+.titulo {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 20px;
+    width: 250px;
+    line-height: 33px;
+    margin-right: 20px;
+}
+
+h1 {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+}
+
+.parrafo {
+   color: hsl(158, 36%, 37%);
+   font-size: 14px;
+   line-height: 25px;
+   
+}
+
+.precios{
+    font-size: 30px;
+    color: #3f8168;
+    font-weight: bold;
+    display: inline-flex;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.movil {
+    display: none;
+}
+
+#precio2 {
+    font-size: 16px;
+    text-decoration: line-through;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.boton {
+    display: flex;
+    flex-direction: column;
+}
+
+.botton {
+    background: #3f8168;
+    border: none;
+    padding: 10px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.botton:hover {
+    background: #082e1f;
+  
+}
+
+.movil {
+    display: none;
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 13px;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .contenedor {
+        max-width: 600px;
+        overflow: hidden;
+        display: flex;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .imagen {
+        content:url("../image-product-mobile.jpg");
+        
+    }
+
+    .boton {
+        margin-bottom: 40px;
+    }
+}
